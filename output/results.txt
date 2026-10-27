@@ -121,7 +121,7 @@ SELECT ?authorName ?wd ?wdLabel ?wdBirth WHERE {
 }
 ORDER BY ?authorName
 -- Результат (5 рядків): authorName | wd | wdLabel | wdBirth
-   Franz Kafka | http://www.wikidata.org/entity/Q5879 | Йоганн Вольфганг фон Гете | 1749-08-28T00:00:00+00:00
+   Franz Kafka | http://www.wikidata.org/entity/Q905 | Франц Кафка | 1883-07-03T00:00:00+00:00
    George Orwell | http://www.wikidata.org/entity/Q3335 | Джордж Орвелл | 1903-06-25T00:00:00+00:00
    Jane Austen | http://www.wikidata.org/entity/Q36322 | Джейн Остін | 1775-12-16T00:00:00+00:00
    Mark Twain | http://www.wikidata.org/entity/Q7245 | Марк Твен | 1835-11-30T00:00:00+00:00

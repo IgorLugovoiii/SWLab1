@@ -1,161 +1,161 @@
-<http://library.example.org/resource/book-sense-and-sensibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
-<http://library.example.org/resource/book-les-miserables> <https://schema.org/datePublished> "1862"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://library.example.org/resource/publisher-thomas-egerton> <https://schema.org/name> "Thomas Egerton" .
+<http://library.example.org/resource/person-franz-kafka> <https://schema.org/name> "Franz Kafka" .
+<http://library.example.org/resource/publisher-american-publishing> <https://schema.org/name> "American Publishing Company" .
+<http://library.example.org/resource/publisher-secker-warburg> <https://schema.org/location> <http://library.example.org/resource/country-uk> .
+<http://library.example.org/resource/person-victor-hugo> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q535> .
+<http://library.example.org/resource/country-germany> <https://schema.org/name> "Germany"@en .
+<http://library.example.org/resource/person-franz-kafka> <https://schema.org/birthDate> "1883"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://library.example.org/resource/book-1984> <https://schema.org/publisher> <http://library.example.org/resource/publisher-secker-warburg> .
+<http://library.example.org/resource/person-jane-austen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://library.example.org/resource/person-mark-twain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
 <http://library.example.org/resource/book-huckleberry-finn> <https://schema.org/genre> <http://library.example.org/resource/genre-satire> .
-<http://library.example.org/resource/book-sense-and-sensibility> <https://schema.org/genre> <http://library.example.org/resource/genre-romance> .
-<http://library.example.org/resource/person-jane-austen> <https://schema.org/name> "Jane Austen" .
-<http://library.example.org/resource/book-tom-sawyer> <https://schema.org/genre> <http://library.example.org/resource/genre-adventure> .
-<http://library.example.org/resource/publisher-webster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
-<http://library.example.org/resource/book-huckleberry-finn> <https://schema.org/publisher> <http://library.example.org/resource/publisher-webster> .
-<http://library.example.org/resource/country-france> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q142> .
+<http://library.example.org/resource/person-jane-austen> <https://schema.org/nationality> <http://library.example.org/resource/country-uk> .
+<http://library.example.org/resource/book-the-metamorphosis> <https://schema.org/publisher> <http://library.example.org/resource/publisher-kurt-wolff> .
+<http://library.example.org/resource/book-animal-farm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://library.example.org/resource/person-victor-hugo> <https://schema.org/nationality> <http://library.example.org/resource/country-france> .
+<http://library.example.org/resource/genre-dystopia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://library.example.org/ontology#Genre> .
+<http://library.example.org/resource/book-1984> <https://schema.org/name> "Nineteen Eighty-Four"@en .
+<http://library.example.org/resource/book-pride-and-prejudice> <https://schema.org/author> <http://library.example.org/resource/person-jane-austen> .
+<http://library.example.org/resource/genre-romance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://library.example.org/ontology#Genre> .
+<http://library.example.org/resource/publisher-thomas-egerton> <https://schema.org/location> <http://library.example.org/resource/country-uk> .
+<http://library.example.org/resource/person-victor-hugo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://library.example.org/resource/book-pride-and-prejudice> <https://schema.org/genre> <http://library.example.org/resource/genre-romance> .
+<http://library.example.org/resource/person-george-orwell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://library.example.org/resource/book-sense-and-sensibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://library.example.org/resource/book-huckleberry-finn> <https://schema.org/author> <http://library.example.org/resource/person-mark-twain> .
+<http://library.example.org/resource/person-franz-kafka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://library.example.org/resource/book-1984> <https://schema.org/datePublished> "1949"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://library.example.org/resource/book-tom-sawyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://library.example.org/resource/book-sense-and-sensibility> <https://schema.org/publisher> <http://library.example.org/resource/publisher-thomas-egerton> .
+<http://library.example.org/resource/book-les-miserables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://library.example.org/resource/publisher-american-publishing> <https://schema.org/location> <http://library.example.org/resource/country-usa> .
+<http://library.example.org/resource/book-the-metamorphosis> <https://schema.org/inLanguage> "de" .
+<http://library.example.org/resource/publisher-lacroix-verboeckhoven> <https://schema.org/name> "A. Lacroix, Verboeckhoven et Cie" .
+<http://library.example.org/resource/genre-romance> <http://www.w3.org/2000/01/rdf-schema#label> "Любовний роман"@uk .
+<http://library.example.org/resource/book-les-miserables> <https://schema.org/publisher> <http://library.example.org/resource/publisher-lacroix-verboeckhoven> .
+<http://library.example.org/resource/book-the-trial> <https://schema.org/name> "Der Process"@de .
+<http://library.example.org/resource/book-les-miserables> <https://schema.org/inLanguage> "fr" .
+<http://library.example.org/resource/book-the-trial> <https://schema.org/datePublished> "1925"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://library.example.org/resource/book-the-metamorphosis> <https://schema.org/author> <http://library.example.org/resource/person-franz-kafka> .
+<http://library.example.org/resource/country-czechia> <https://schema.org/name> "Чехія"@uk .
+<http://library.example.org/resource/book-les-miserables> <https://schema.org/genre> <http://library.example.org/resource/genre-historical-fiction> .
+<http://library.example.org/resource/book-the-metamorphosis> <https://schema.org/name> "Die Verwandlung"@de .
+<http://library.example.org/resource/book-the-trial> <https://schema.org/genre> <http://library.example.org/resource/genre-modernism> .
+<http://library.example.org/resource/book-the-metamorphosis> <https://schema.org/datePublished> "1915"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://library.example.org/resource/publisher-die-schmiede> <https://schema.org/name> "Die Schmiede" .
+<http://library.example.org/resource/genre-modernism> <http://www.w3.org/2000/01/rdf-schema#label> "Modernism"@en .
 <http://library.example.org/resource/genre-historical-fiction> <http://www.w3.org/2000/01/rdf-schema#label> "Історичний роман"@uk .
 <http://library.example.org/resource/person-george-orwell> <http://xmlns.com/foaf/0.1/name> "George Orwell" .
-<http://library.example.org/resource/publisher-secker-warburg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
-<http://library.example.org/resource/book-1984> <https://schema.org/publisher> <http://library.example.org/resource/publisher-secker-warburg> .
-<http://library.example.org/resource/book-the-metamorphosis> <https://schema.org/datePublished> "1915"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://library.example.org/resource/book-sense-and-sensibility> <https://schema.org/publisher> <http://library.example.org/resource/publisher-thomas-egerton> .
-<http://library.example.org/resource/person-george-orwell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://library.example.org/resource/book-tom-sawyer> <https://schema.org/inLanguage> "en" .
-<http://library.example.org/resource/genre-dystopia> <http://www.w3.org/2000/01/rdf-schema#label> "Антиутопія"@uk .
-<http://library.example.org/resource/person-franz-kafka> <http://xmlns.com/foaf/0.1/name> "Franz Kafka" .
-<http://library.example.org/resource/person-mark-twain> <https://schema.org/birthDate> "1835"^^<http://www.w3.org/2001/XMLSchema#gYear> .
-<http://library.example.org/resource/person-victor-hugo> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q535> .
-<http://library.example.org/resource/person-franz-kafka> <https://schema.org/name> "Franz Kafka" .
-<http://library.example.org/resource/book-pride-and-prejudice> <https://schema.org/datePublished> "1813"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://library.example.org/resource/genre-romance> <http://www.w3.org/2000/01/rdf-schema#label> "Любовний роман"@uk .
-<http://library.example.org/resource/book-tom-sawyer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
-<http://library.example.org/resource/book-pride-and-prejudice> <https://schema.org/publisher> <http://library.example.org/resource/publisher-thomas-egerton> .
-<http://library.example.org/resource/person-mark-twain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://library.example.org/resource/person-mark-twain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
-<http://library.example.org/resource/book-sense-and-sensibility> <https://schema.org/datePublished> "1811"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://library.example.org/resource/person-victor-hugo> <http://xmlns.com/foaf/0.1/name> "Victor Hugo" .
-<http://library.example.org/resource/book-huckleberry-finn> <https://schema.org/author> <http://library.example.org/resource/person-mark-twain> .
-<http://library.example.org/resource/book-pride-and-prejudice> <https://schema.org/name> "Pride and Prejudice"@en .
-<http://library.example.org/resource/person-victor-hugo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://library.example.org/resource/person-victor-hugo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
-<http://library.example.org/resource/person-victor-hugo> <https://schema.org/name> "Victor Hugo" .
-<http://library.example.org/resource/country-uk> <https://schema.org/name> "United Kingdom"@en .
-<http://library.example.org/resource/person-jane-austen> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q36322> .
-<http://library.example.org/resource/publisher-thomas-egerton> <https://schema.org/location> <http://library.example.org/resource/country-uk> .
-<http://library.example.org/resource/publisher-die-schmiede> <https://schema.org/location> <http://library.example.org/resource/country-germany> .
-<http://library.example.org/resource/country-germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Country> .
-<http://library.example.org/resource/book-sense-and-sensibility> <https://schema.org/inLanguage> "en" .
-<http://library.example.org/resource/book-animal-farm> <https://schema.org/name> "Animal Farm"@en .
-<http://library.example.org/resource/book-the-trial> <https://schema.org/name> "Der Process"@de .
-<http://library.example.org/resource/book-sense-and-sensibility> <https://schema.org/name> "Sense and Sensibility"@en .
-<http://library.example.org/resource/genre-romance> <http://www.w3.org/2000/01/rdf-schema#label> "Romance"@en .
-<http://library.example.org/resource/book-the-metamorphosis> <https://schema.org/author> <http://library.example.org/resource/person-franz-kafka> .
-<http://library.example.org/resource/book-huckleberry-finn> <https://schema.org/datePublished> "1884"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://library.example.org/resource/country-usa> <https://schema.org/name> "United States"@en .
-<http://library.example.org/resource/book-1984> <https://schema.org/author> <http://library.example.org/resource/person-george-orwell> .
-<http://library.example.org/resource/book-les-miserables> <https://schema.org/inLanguage> "fr" .
-<http://library.example.org/resource/genre-adventure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://library.example.org/ontology#Genre> .
-<http://library.example.org/resource/person-victor-hugo> <https://schema.org/nationality> <http://library.example.org/resource/country-france> .
-<http://library.example.org/resource/publisher-webster> <https://schema.org/name> "Charles L. Webster and Company" .
-<http://library.example.org/resource/book-pride-and-prejudice> <https://schema.org/inLanguage> "en" .
-<http://library.example.org/resource/book-les-miserables> <https://schema.org/genre> <http://library.example.org/resource/genre-historical-fiction> .
-<http://library.example.org/resource/country-france> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Country> .
-<http://library.example.org/resource/person-franz-kafka> <https://schema.org/nationality> <http://library.example.org/resource/country-czechia> .
-<http://library.example.org/resource/genre-romance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://library.example.org/ontology#Genre> .
-<http://library.example.org/resource/book-animal-farm> <https://schema.org/datePublished> "1945"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://library.example.org/resource/genre-modernism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://library.example.org/ontology#Genre> .
-<http://library.example.org/resource/book-pride-and-prejudice> <https://schema.org/genre> <http://library.example.org/resource/genre-romance> .
-<http://library.example.org/resource/publisher-secker-warburg> <https://schema.org/location> <http://library.example.org/resource/country-uk> .
-<http://library.example.org/resource/book-1984> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
-<http://library.example.org/resource/genre-adventure> <http://www.w3.org/2000/01/rdf-schema#label> "Adventure"@en .
-<http://library.example.org/resource/genre-historical-fiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://library.example.org/ontology#Genre> .
-<http://library.example.org/resource/book-tom-sawyer> <https://schema.org/name> "The Adventures of Tom Sawyer"@en .
-<http://library.example.org/resource/country-uk> <https://schema.org/name> "Велика Британія"@uk .
-<http://library.example.org/resource/person-franz-kafka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://library.example.org/resource/person-franz-kafka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
-<http://library.example.org/resource/book-pride-and-prejudice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
-<http://library.example.org/resource/book-the-trial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
-<http://library.example.org/resource/book-the-trial> <https://schema.org/genre> <http://library.example.org/resource/genre-modernism> .
-<http://library.example.org/resource/genre-satire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://library.example.org/ontology#Genre> .
-<http://library.example.org/resource/country-germany> <https://schema.org/name> "Німеччина"@uk .
-<http://library.example.org/resource/book-the-metamorphosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
-<http://library.example.org/resource/book-tom-sawyer> <https://schema.org/publisher> <http://library.example.org/resource/publisher-american-publishing> .
-<http://library.example.org/resource/book-the-metamorphosis> <https://schema.org/genre> <http://library.example.org/resource/genre-modernism> .
-<http://library.example.org/resource/country-czechia> <https://schema.org/name> "Чехія"@uk .
-<http://library.example.org/resource/book-the-trial> <https://schema.org/author> <http://library.example.org/resource/person-franz-kafka> .
-<http://library.example.org/resource/book-les-miserables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
-<http://library.example.org/resource/book-animal-farm> <https://schema.org/inLanguage> "en" .
 <http://library.example.org/resource/person-mark-twain> <https://schema.org/nationality> <http://library.example.org/resource/country-usa> .
-<http://library.example.org/resource/book-huckleberry-finn> <https://schema.org/name> "Adventures of Huckleberry Finn"@en .
-<http://library.example.org/resource/publisher-lacroix-verboeckhoven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
-<http://library.example.org/resource/book-sense-and-sensibility> <https://schema.org/author> <http://library.example.org/resource/person-jane-austen> .
-<http://library.example.org/resource/country-czechia> <https://schema.org/name> "Czech Republic"@en .
-<http://library.example.org/resource/book-the-trial> <https://schema.org/inLanguage> "de" .
-<http://library.example.org/resource/book-1984> <https://schema.org/datePublished> "1949"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://library.example.org/resource/book-animal-farm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
-<http://library.example.org/resource/book-the-metamorphosis> <https://schema.org/inLanguage> "de" .
-<http://library.example.org/resource/genre-modernism> <http://www.w3.org/2000/01/rdf-schema#label> "Модернізм"@uk .
-<http://library.example.org/resource/book-tom-sawyer> <https://schema.org/datePublished> "1876"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://library.example.org/resource/publisher-kurt-wolff> <https://schema.org/name> "Kurt Wolff Verlag" .
-<http://library.example.org/resource/genre-dystopia> <http://www.w3.org/2000/01/rdf-schema#label> "Dystopia"@en .
-<http://library.example.org/resource/person-jane-austen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
-<http://library.example.org/resource/country-belgium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Country> .
-<http://library.example.org/resource/person-jane-austen> <https://schema.org/nationality> <http://library.example.org/resource/country-uk> .
-<http://library.example.org/resource/book-les-miserables> <https://schema.org/name> "Les Misérables"@fr .
-<http://library.example.org/resource/country-germany> <https://schema.org/name> "Germany"@en .
-<http://library.example.org/resource/genre-satire> <http://www.w3.org/2000/01/rdf-schema#label> "Satire"@en .
-<http://library.example.org/resource/publisher-american-publishing> <https://schema.org/location> <http://library.example.org/resource/country-usa> .
+<http://library.example.org/resource/genre-adventure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://library.example.org/ontology#Genre> .
+<http://library.example.org/resource/genre-romance> <http://www.w3.org/2000/01/rdf-schema#label> "Romance"@en .
 <http://library.example.org/resource/book-huckleberry-finn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
-<http://library.example.org/resource/person-mark-twain> <https://schema.org/name> "Mark Twain" .
-<http://library.example.org/resource/book-animal-farm> <https://schema.org/genre> <http://library.example.org/resource/genre-satire> .
-<http://library.example.org/resource/publisher-kurt-wolff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
-<http://library.example.org/resource/publisher-die-schmiede> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
-<http://library.example.org/resource/country-germany> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q183> .
-<http://library.example.org/resource/publisher-thomas-egerton> <https://schema.org/name> "Thomas Egerton" .
-<http://library.example.org/resource/publisher-webster> <https://schema.org/location> <http://library.example.org/resource/country-usa> .
-<http://library.example.org/resource/publisher-american-publishing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
-<http://library.example.org/resource/book-animal-farm> <https://schema.org/publisher> <http://library.example.org/resource/publisher-secker-warburg> .
-<http://library.example.org/resource/genre-historical-fiction> <http://www.w3.org/2000/01/rdf-schema#label> "Historical fiction"@en .
-<http://library.example.org/resource/country-belgium> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q31> .
-<http://library.example.org/resource/genre-adventure> <http://www.w3.org/2000/01/rdf-schema#label> "Пригодницька проза"@uk .
-<http://library.example.org/resource/book-the-metamorphosis> <https://schema.org/publisher> <http://library.example.org/resource/publisher-kurt-wolff> .
-<http://library.example.org/resource/book-1984> <https://schema.org/name> "Nineteen Eighty-Four"@en .
-<http://library.example.org/resource/publisher-die-schmiede> <https://schema.org/name> "Die Schmiede" .
-<http://library.example.org/resource/country-usa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Country> .
-<http://library.example.org/resource/genre-dystopia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://library.example.org/ontology#Genre> .
-<http://library.example.org/resource/country-usa> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q30> .
-<http://library.example.org/resource/person-george-orwell> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q3335> .
-<http://library.example.org/resource/book-1984> <https://schema.org/genre> <http://library.example.org/resource/genre-dystopia> .
-<http://library.example.org/resource/book-les-miserables> <https://schema.org/author> <http://library.example.org/resource/person-victor-hugo> .
-<http://library.example.org/resource/book-the-trial> <https://schema.org/datePublished> "1925"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://library.example.org/resource/book-the-trial> <https://schema.org/publisher> <http://library.example.org/resource/publisher-die-schmiede> .
-<http://library.example.org/resource/person-franz-kafka> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q5879> .
-<http://library.example.org/resource/country-czechia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Country> .
+<http://library.example.org/resource/book-tom-sawyer> <https://schema.org/publisher> <http://library.example.org/resource/publisher-american-publishing> .
+<http://library.example.org/resource/genre-satire> <http://www.w3.org/2000/01/rdf-schema#label> "Satire"@en .
+<http://library.example.org/resource/person-franz-kafka> <http://xmlns.com/foaf/0.1/name> "Franz Kafka" .
+<http://library.example.org/resource/book-les-miserables> <https://schema.org/datePublished> "1862"^^<http://www.w3.org/2001/XMLSchema#integer> .
 <http://library.example.org/resource/person-jane-austen> <https://schema.org/birthDate> "1775"^^<http://www.w3.org/2001/XMLSchema#gYear> .
-<http://library.example.org/resource/country-france> <https://schema.org/name> "France"@en .
-<http://library.example.org/resource/country-uk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Country> .
-<http://library.example.org/resource/person-george-orwell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
-<http://library.example.org/resource/person-george-orwell> <https://schema.org/name> "George Orwell" .
-<http://library.example.org/resource/person-george-orwell> <https://schema.org/nationality> <http://library.example.org/resource/country-uk> .
-<http://library.example.org/resource/person-mark-twain> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q7245> .
-<http://library.example.org/resource/book-huckleberry-finn> <https://schema.org/inLanguage> "en" .
-<http://library.example.org/resource/person-jane-austen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
-<http://library.example.org/resource/book-pride-and-prejudice> <https://schema.org/author> <http://library.example.org/resource/person-jane-austen> .
-<http://library.example.org/resource/country-belgium> <https://schema.org/name> "Belgium"@en .
-<http://library.example.org/resource/person-franz-kafka> <https://schema.org/birthDate> "1883"^^<http://www.w3.org/2001/XMLSchema#gYear> .
-<http://library.example.org/resource/book-1984> <https://schema.org/inLanguage> "en" .
-<http://library.example.org/resource/book-the-metamorphosis> <https://schema.org/name> "Die Verwandlung"@de .
-<http://library.example.org/resource/person-mark-twain> <http://xmlns.com/foaf/0.1/name> "Mark Twain" .
-<http://library.example.org/resource/country-uk> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q145> .
-<http://library.example.org/resource/person-george-orwell> <https://schema.org/birthDate> "1903"^^<http://www.w3.org/2001/XMLSchema#gYear> .
-<http://library.example.org/resource/book-animal-farm> <https://schema.org/author> <http://library.example.org/resource/person-george-orwell> .
-<http://library.example.org/resource/book-les-miserables> <https://schema.org/publisher> <http://library.example.org/resource/publisher-lacroix-verboeckhoven> .
-<http://library.example.org/resource/country-belgium> <https://schema.org/name> "Бельгія"@uk .
-<http://library.example.org/resource/person-victor-hugo> <https://schema.org/birthDate> "1802"^^<http://www.w3.org/2001/XMLSchema#gYear> .
-<http://library.example.org/resource/publisher-thomas-egerton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
-<http://library.example.org/resource/publisher-lacroix-verboeckhoven> <https://schema.org/location> <http://library.example.org/resource/country-belgium> .
-<http://library.example.org/resource/genre-satire> <http://www.w3.org/2000/01/rdf-schema#label> "Сатира"@uk .
-<http://library.example.org/resource/country-france> <https://schema.org/name> "Франція"@uk .
-<http://library.example.org/resource/publisher-lacroix-verboeckhoven> <https://schema.org/name> "A. Lacroix, Verboeckhoven et Cie" .
-<http://library.example.org/resource/genre-modernism> <http://www.w3.org/2000/01/rdf-schema#label> "Modernism"@en .
 <http://library.example.org/resource/publisher-secker-warburg> <https://schema.org/name> "Secker & Warburg" .
-<http://library.example.org/resource/book-tom-sawyer> <https://schema.org/author> <http://library.example.org/resource/person-mark-twain> .
-<http://library.example.org/resource/publisher-kurt-wolff> <https://schema.org/location> <http://library.example.org/resource/country-germany> .
-<http://library.example.org/resource/publisher-american-publishing> <https://schema.org/name> "American Publishing Company" .
-<http://library.example.org/resource/person-jane-austen> <http://xmlns.com/foaf/0.1/name> "Jane Austen" .
+<http://library.example.org/resource/publisher-webster> <https://schema.org/name> "Charles L. Webster and Company" .
+<http://library.example.org/resource/book-animal-farm> <https://schema.org/inLanguage> "en" .
+<http://library.example.org/resource/publisher-die-schmiede> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
+<http://library.example.org/resource/person-franz-kafka> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q905> .
+<http://library.example.org/resource/person-victor-hugo> <https://schema.org/name> "Victor Hugo" .
+<http://library.example.org/resource/publisher-die-schmiede> <https://schema.org/location> <http://library.example.org/resource/country-germany> .
+<http://library.example.org/resource/publisher-lacroix-verboeckhoven> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
+<http://library.example.org/resource/book-1984> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
 <http://library.example.org/resource/country-czechia> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q213> .
+<http://library.example.org/resource/book-pride-and-prejudice> <https://schema.org/publisher> <http://library.example.org/resource/publisher-thomas-egerton> .
+<http://library.example.org/resource/book-sense-and-sensibility> <https://schema.org/datePublished> "1811"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://library.example.org/resource/genre-historical-fiction> <http://www.w3.org/2000/01/rdf-schema#label> "Historical fiction"@en .
+<http://library.example.org/resource/country-usa> <https://schema.org/name> "United States"@en .
+<http://library.example.org/resource/country-belgium> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q31> .
+<http://library.example.org/resource/publisher-kurt-wolff> <https://schema.org/name> "Kurt Wolff Verlag" .
+<http://library.example.org/resource/country-uk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Country> .
+<http://library.example.org/resource/genre-modernism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://library.example.org/ontology#Genre> .
+<http://library.example.org/resource/book-1984> <https://schema.org/inLanguage> "en" .
+<http://library.example.org/resource/book-tom-sawyer> <https://schema.org/inLanguage> "en" .
+<http://library.example.org/resource/publisher-thomas-egerton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
+<http://library.example.org/resource/book-animal-farm> <https://schema.org/author> <http://library.example.org/resource/person-george-orwell> .
+<http://library.example.org/resource/country-germany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Country> .
+<http://library.example.org/resource/genre-adventure> <http://www.w3.org/2000/01/rdf-schema#label> "Пригодницька проза"@uk .
+<http://library.example.org/resource/country-usa> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q30> .
+<http://library.example.org/resource/person-jane-austen> <https://schema.org/name> "Jane Austen" .
+<http://library.example.org/resource/country-germany> <https://schema.org/name> "Німеччина"@uk .
+<http://library.example.org/resource/book-les-miserables> <https://schema.org/author> <http://library.example.org/resource/person-victor-hugo> .
+<http://library.example.org/resource/book-the-trial> <https://schema.org/publisher> <http://library.example.org/resource/publisher-die-schmiede> .
+<http://library.example.org/resource/genre-dystopia> <http://www.w3.org/2000/01/rdf-schema#label> "Антиутопія"@uk .
+<http://library.example.org/resource/country-belgium> <https://schema.org/name> "Бельгія"@uk .
+<http://library.example.org/resource/genre-historical-fiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://library.example.org/ontology#Genre> .
+<http://library.example.org/resource/book-1984> <https://schema.org/author> <http://library.example.org/resource/person-george-orwell> .
+<http://library.example.org/resource/country-france> <https://schema.org/name> "France"@en .
+<http://library.example.org/resource/book-animal-farm> <https://schema.org/name> "Animal Farm"@en .
+<http://library.example.org/resource/country-germany> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q183> .
+<http://library.example.org/resource/genre-modernism> <http://www.w3.org/2000/01/rdf-schema#label> "Модернізм"@uk .
+<http://library.example.org/resource/book-huckleberry-finn> <https://schema.org/inLanguage> "en" .
+<http://library.example.org/resource/country-france> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Country> .
+<http://library.example.org/resource/publisher-webster> <https://schema.org/location> <http://library.example.org/resource/country-usa> .
+<http://library.example.org/resource/book-tom-sawyer> <https://schema.org/author> <http://library.example.org/resource/person-mark-twain> .
+<http://library.example.org/resource/genre-adventure> <http://www.w3.org/2000/01/rdf-schema#label> "Adventure"@en .
+<http://library.example.org/resource/country-uk> <https://schema.org/name> "Велика Британія"@uk .
+<http://library.example.org/resource/book-sense-and-sensibility> <https://schema.org/name> "Sense and Sensibility"@en .
+<http://library.example.org/resource/book-pride-and-prejudice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://library.example.org/resource/person-mark-twain> <https://schema.org/name> "Mark Twain" .
+<http://library.example.org/resource/book-les-miserables> <https://schema.org/name> "Les Misérables"@fr .
+<http://library.example.org/resource/person-george-orwell> <https://schema.org/nationality> <http://library.example.org/resource/country-uk> .
+<http://library.example.org/resource/book-the-metamorphosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://library.example.org/resource/book-tom-sawyer> <https://schema.org/name> "The Adventures of Tom Sawyer"@en .
+<http://library.example.org/resource/book-huckleberry-finn> <https://schema.org/datePublished> "1884"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://library.example.org/resource/publisher-american-publishing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
+<http://library.example.org/resource/person-victor-hugo> <http://xmlns.com/foaf/0.1/name> "Victor Hugo" .
+<http://library.example.org/resource/genre-satire> <http://www.w3.org/2000/01/rdf-schema#label> "Сатира"@uk .
+<http://library.example.org/resource/book-sense-and-sensibility> <https://schema.org/inLanguage> "en" .
 <http://library.example.org/resource/country-usa> <https://schema.org/name> "США"@uk .
+<http://library.example.org/resource/person-mark-twain> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q7245> .
+<http://library.example.org/resource/book-animal-farm> <https://schema.org/publisher> <http://library.example.org/resource/publisher-secker-warburg> .
+<http://library.example.org/resource/book-the-trial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Book> .
+<http://library.example.org/resource/book-tom-sawyer> <https://schema.org/datePublished> "1876"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://library.example.org/resource/book-pride-and-prejudice> <https://schema.org/name> "Pride and Prejudice"@en .
+<http://library.example.org/resource/book-the-trial> <https://schema.org/author> <http://library.example.org/resource/person-franz-kafka> .
+<http://library.example.org/resource/publisher-webster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
+<http://library.example.org/resource/person-mark-twain> <https://schema.org/birthDate> "1835"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://library.example.org/resource/country-france> <https://schema.org/name> "Франція"@uk .
+<http://library.example.org/resource/book-pride-and-prejudice> <https://schema.org/datePublished> "1813"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://library.example.org/resource/publisher-kurt-wolff> <https://schema.org/location> <http://library.example.org/resource/country-germany> .
+<http://library.example.org/resource/country-france> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q142> .
+<http://library.example.org/resource/person-jane-austen> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q36322> .
+<http://library.example.org/resource/person-jane-austen> <http://xmlns.com/foaf/0.1/name> "Jane Austen" .
+<http://library.example.org/resource/person-jane-austen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<http://library.example.org/resource/person-mark-twain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<http://library.example.org/resource/country-uk> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q145> .
+<http://library.example.org/resource/book-the-metamorphosis> <https://schema.org/genre> <http://library.example.org/resource/genre-modernism> .
+<http://library.example.org/resource/person-franz-kafka> <https://schema.org/nationality> <http://library.example.org/resource/country-czechia> .
+<http://library.example.org/resource/person-victor-hugo> <https://schema.org/birthDate> "1802"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://library.example.org/resource/book-animal-farm> <https://schema.org/datePublished> "1945"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://library.example.org/resource/book-1984> <https://schema.org/genre> <http://library.example.org/resource/genre-dystopia> .
+<http://library.example.org/resource/country-belgium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Country> .
+<http://library.example.org/resource/publisher-secker-warburg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
+<http://library.example.org/resource/book-animal-farm> <https://schema.org/genre> <http://library.example.org/resource/genre-satire> .
+<http://library.example.org/resource/book-sense-and-sensibility> <https://schema.org/genre> <http://library.example.org/resource/genre-romance> .
+<http://library.example.org/resource/person-victor-hugo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<http://library.example.org/resource/book-huckleberry-finn> <https://schema.org/name> "Adventures of Huckleberry Finn"@en .
+<http://library.example.org/resource/person-george-orwell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<http://library.example.org/resource/country-uk> <https://schema.org/name> "United Kingdom"@en .
+<http://library.example.org/resource/book-sense-and-sensibility> <https://schema.org/author> <http://library.example.org/resource/person-jane-austen> .
+<http://library.example.org/resource/person-franz-kafka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+<http://library.example.org/resource/person-george-orwell> <https://schema.org/birthDate> "1903"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+<http://library.example.org/resource/person-mark-twain> <http://xmlns.com/foaf/0.1/name> "Mark Twain" .
+<http://library.example.org/resource/book-the-trial> <https://schema.org/inLanguage> "de" .
+<http://library.example.org/resource/person-george-orwell> <https://schema.org/name> "George Orwell" .
+<http://library.example.org/resource/person-george-orwell> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q3335> .
+<http://library.example.org/resource/genre-dystopia> <http://www.w3.org/2000/01/rdf-schema#label> "Dystopia"@en .
+<http://library.example.org/resource/country-czechia> <https://schema.org/name> "Czech Republic"@en .
+<http://library.example.org/resource/book-pride-and-prejudice> <https://schema.org/inLanguage> "en" .
+<http://library.example.org/resource/publisher-lacroix-verboeckhoven> <https://schema.org/location> <http://library.example.org/resource/country-belgium> .
+<http://library.example.org/resource/country-usa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Country> .
+<http://library.example.org/resource/publisher-kurt-wolff> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Organization> .
+<http://library.example.org/resource/book-huckleberry-finn> <https://schema.org/publisher> <http://library.example.org/resource/publisher-webster> .
+<http://library.example.org/resource/genre-satire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://library.example.org/ontology#Genre> .
+<http://library.example.org/resource/country-belgium> <https://schema.org/name> "Belgium"@en .
+<http://library.example.org/resource/book-tom-sawyer> <https://schema.org/genre> <http://library.example.org/resource/genre-adventure> .
+<http://library.example.org/resource/country-czechia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Country> .

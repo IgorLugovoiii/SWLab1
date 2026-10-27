@@ -6,80 +6,44 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:schema="https://schema.org/"
 >
-  <rdf:Description rdf:about="http://library.example.org/resource/book-sense-and-sensibility">
-    <rdf:type rdf:resource="https://schema.org/Book"/>
-    <schema:author rdf:resource="http://library.example.org/resource/person-jane-austen"/>
-    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1811</schema:datePublished>
-    <schema:genre rdf:resource="http://library.example.org/resource/genre-romance"/>
-    <schema:inLanguage>en</schema:inLanguage>
-    <schema:name xml:lang="en">Sense and Sensibility</schema:name>
-    <schema:publisher rdf:resource="http://library.example.org/resource/publisher-thomas-egerton"/>
+  <rdf:Description rdf:about="http://library.example.org/resource/publisher-thomas-egerton">
+    <rdf:type rdf:resource="https://schema.org/Organization"/>
+    <schema:location rdf:resource="http://library.example.org/resource/country-uk"/>
+    <schema:name>Thomas Egerton</schema:name>
   </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/book-les-miserables">
-    <rdf:type rdf:resource="https://schema.org/Book"/>
-    <schema:author rdf:resource="http://library.example.org/resource/person-victor-hugo"/>
-    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1862</schema:datePublished>
-    <schema:genre rdf:resource="http://library.example.org/resource/genre-historical-fiction"/>
-    <schema:inLanguage>fr</schema:inLanguage>
-    <schema:name xml:lang="fr">Les Misérables</schema:name>
-    <schema:publisher rdf:resource="http://library.example.org/resource/publisher-lacroix-verboeckhoven"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/book-huckleberry-finn">
-    <rdf:type rdf:resource="https://schema.org/Book"/>
-    <schema:author rdf:resource="http://library.example.org/resource/person-mark-twain"/>
-    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1884</schema:datePublished>
-    <schema:genre rdf:resource="http://library.example.org/resource/genre-satire"/>
-    <schema:inLanguage>en</schema:inLanguage>
-    <schema:name xml:lang="en">Adventures of Huckleberry Finn</schema:name>
-    <schema:publisher rdf:resource="http://library.example.org/resource/publisher-webster"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/person-jane-austen">
+  <rdf:Description rdf:about="http://library.example.org/resource/person-franz-kafka">
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdf:type rdf:resource="https://schema.org/Person"/>
-    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q36322"/>
-    <foaf:name>Jane Austen</foaf:name>
-    <schema:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1775</schema:birthDate>
-    <schema:name>Jane Austen</schema:name>
-    <schema:nationality rdf:resource="http://library.example.org/resource/country-uk"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q905"/>
+    <foaf:name>Franz Kafka</foaf:name>
+    <schema:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1883</schema:birthDate>
+    <schema:name>Franz Kafka</schema:name>
+    <schema:nationality rdf:resource="http://library.example.org/resource/country-czechia"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/book-tom-sawyer">
-    <rdf:type rdf:resource="https://schema.org/Book"/>
-    <schema:author rdf:resource="http://library.example.org/resource/person-mark-twain"/>
-    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1876</schema:datePublished>
-    <schema:genre rdf:resource="http://library.example.org/resource/genre-adventure"/>
-    <schema:inLanguage>en</schema:inLanguage>
-    <schema:name xml:lang="en">The Adventures of Tom Sawyer</schema:name>
-    <schema:publisher rdf:resource="http://library.example.org/resource/publisher-american-publishing"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/publisher-webster">
+  <rdf:Description rdf:about="http://library.example.org/resource/publisher-american-publishing">
     <rdf:type rdf:resource="https://schema.org/Organization"/>
     <schema:location rdf:resource="http://library.example.org/resource/country-usa"/>
-    <schema:name>Charles L. Webster and Company</schema:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/country-france">
-    <rdf:type rdf:resource="https://schema.org/Country"/>
-    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q142"/>
-    <schema:name xml:lang="en">France</schema:name>
-    <schema:name xml:lang="uk">Франція</schema:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/genre-historical-fiction">
-    <rdf:type rdf:resource="http://library.example.org/ontology#Genre"/>
-    <rdfs:label xml:lang="en">Historical fiction</rdfs:label>
-    <rdfs:label xml:lang="uk">Історичний роман</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/person-george-orwell">
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdf:type rdf:resource="https://schema.org/Person"/>
-    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q3335"/>
-    <foaf:name>George Orwell</foaf:name>
-    <schema:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1903</schema:birthDate>
-    <schema:name>George Orwell</schema:name>
-    <schema:nationality rdf:resource="http://library.example.org/resource/country-uk"/>
+    <schema:name>American Publishing Company</schema:name>
   </rdf:Description>
   <rdf:Description rdf:about="http://library.example.org/resource/publisher-secker-warburg">
     <rdf:type rdf:resource="https://schema.org/Organization"/>
     <schema:location rdf:resource="http://library.example.org/resource/country-uk"/>
     <schema:name>Secker &amp; Warburg</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/person-victor-hugo">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="https://schema.org/Person"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q535"/>
+    <foaf:name>Victor Hugo</foaf:name>
+    <schema:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1802</schema:birthDate>
+    <schema:name>Victor Hugo</schema:name>
+    <schema:nationality rdf:resource="http://library.example.org/resource/country-france"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/country-germany">
+    <rdf:type rdf:resource="https://schema.org/Country"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q183"/>
+    <schema:name xml:lang="en">Germany</schema:name>
+    <schema:name xml:lang="uk">Німеччина</schema:name>
   </rdf:Description>
   <rdf:Description rdf:about="http://library.example.org/resource/book-1984">
     <rdf:type rdf:resource="https://schema.org/Book"/>
@@ -90,28 +54,14 @@
     <schema:name xml:lang="en">Nineteen Eighty-Four</schema:name>
     <schema:publisher rdf:resource="http://library.example.org/resource/publisher-secker-warburg"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/book-the-metamorphosis">
-    <rdf:type rdf:resource="https://schema.org/Book"/>
-    <schema:author rdf:resource="http://library.example.org/resource/person-franz-kafka"/>
-    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1915</schema:datePublished>
-    <schema:genre rdf:resource="http://library.example.org/resource/genre-modernism"/>
-    <schema:inLanguage>de</schema:inLanguage>
-    <schema:name xml:lang="de">Die Verwandlung</schema:name>
-    <schema:publisher rdf:resource="http://library.example.org/resource/publisher-kurt-wolff"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/genre-dystopia">
-    <rdf:type rdf:resource="http://library.example.org/ontology#Genre"/>
-    <rdfs:label xml:lang="en">Dystopia</rdfs:label>
-    <rdfs:label xml:lang="uk">Антиутопія</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/person-franz-kafka">
+  <rdf:Description rdf:about="http://library.example.org/resource/person-jane-austen">
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdf:type rdf:resource="https://schema.org/Person"/>
-    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q5879"/>
-    <foaf:name>Franz Kafka</foaf:name>
-    <schema:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1883</schema:birthDate>
-    <schema:name>Franz Kafka</schema:name>
-    <schema:nationality rdf:resource="http://library.example.org/resource/country-czechia"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q36322"/>
+    <foaf:name>Jane Austen</foaf:name>
+    <schema:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1775</schema:birthDate>
+    <schema:name>Jane Austen</schema:name>
+    <schema:nationality rdf:resource="http://library.example.org/resource/country-uk"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://library.example.org/resource/person-mark-twain">
     <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
@@ -122,14 +72,37 @@
     <schema:name>Mark Twain</schema:name>
     <schema:nationality rdf:resource="http://library.example.org/resource/country-usa"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/person-victor-hugo">
-    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdf:type rdf:resource="https://schema.org/Person"/>
-    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q535"/>
-    <foaf:name>Victor Hugo</foaf:name>
-    <schema:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1802</schema:birthDate>
-    <schema:name>Victor Hugo</schema:name>
-    <schema:nationality rdf:resource="http://library.example.org/resource/country-france"/>
+  <rdf:Description rdf:about="http://library.example.org/resource/book-huckleberry-finn">
+    <rdf:type rdf:resource="https://schema.org/Book"/>
+    <schema:author rdf:resource="http://library.example.org/resource/person-mark-twain"/>
+    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1884</schema:datePublished>
+    <schema:genre rdf:resource="http://library.example.org/resource/genre-satire"/>
+    <schema:inLanguage>en</schema:inLanguage>
+    <schema:name xml:lang="en">Adventures of Huckleberry Finn</schema:name>
+    <schema:publisher rdf:resource="http://library.example.org/resource/publisher-webster"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/book-the-metamorphosis">
+    <rdf:type rdf:resource="https://schema.org/Book"/>
+    <schema:author rdf:resource="http://library.example.org/resource/person-franz-kafka"/>
+    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1915</schema:datePublished>
+    <schema:genre rdf:resource="http://library.example.org/resource/genre-modernism"/>
+    <schema:inLanguage>de</schema:inLanguage>
+    <schema:name xml:lang="de">Die Verwandlung</schema:name>
+    <schema:publisher rdf:resource="http://library.example.org/resource/publisher-kurt-wolff"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/book-animal-farm">
+    <rdf:type rdf:resource="https://schema.org/Book"/>
+    <schema:author rdf:resource="http://library.example.org/resource/person-george-orwell"/>
+    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1945</schema:datePublished>
+    <schema:genre rdf:resource="http://library.example.org/resource/genre-satire"/>
+    <schema:inLanguage>en</schema:inLanguage>
+    <schema:name xml:lang="en">Animal Farm</schema:name>
+    <schema:publisher rdf:resource="http://library.example.org/resource/publisher-secker-warburg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/genre-dystopia">
+    <rdf:type rdf:resource="http://library.example.org/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Dystopia</rdfs:label>
+    <rdfs:label xml:lang="uk">Антиутопія</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://library.example.org/resource/book-pride-and-prejudice">
     <rdf:type rdf:resource="https://schema.org/Book"/>
@@ -145,36 +118,46 @@
     <rdfs:label xml:lang="en">Romance</rdfs:label>
     <rdfs:label xml:lang="uk">Любовний роман</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/country-uk">
-    <rdf:type rdf:resource="https://schema.org/Country"/>
-    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q145"/>
-    <schema:name xml:lang="en">United Kingdom</schema:name>
-    <schema:name xml:lang="uk">Велика Британія</schema:name>
+  <rdf:Description rdf:about="http://library.example.org/resource/person-george-orwell">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <rdf:type rdf:resource="https://schema.org/Person"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q3335"/>
+    <foaf:name>George Orwell</foaf:name>
+    <schema:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1903</schema:birthDate>
+    <schema:name>George Orwell</schema:name>
+    <schema:nationality rdf:resource="http://library.example.org/resource/country-uk"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/publisher-thomas-egerton">
-    <rdf:type rdf:resource="https://schema.org/Organization"/>
-    <schema:location rdf:resource="http://library.example.org/resource/country-uk"/>
-    <schema:name>Thomas Egerton</schema:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/publisher-die-schmiede">
-    <rdf:type rdf:resource="https://schema.org/Organization"/>
-    <schema:location rdf:resource="http://library.example.org/resource/country-germany"/>
-    <schema:name>Die Schmiede</schema:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/country-germany">
-    <rdf:type rdf:resource="https://schema.org/Country"/>
-    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q183"/>
-    <schema:name xml:lang="en">Germany</schema:name>
-    <schema:name xml:lang="uk">Німеччина</schema:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/book-animal-farm">
+  <rdf:Description rdf:about="http://library.example.org/resource/book-sense-and-sensibility">
     <rdf:type rdf:resource="https://schema.org/Book"/>
-    <schema:author rdf:resource="http://library.example.org/resource/person-george-orwell"/>
-    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1945</schema:datePublished>
-    <schema:genre rdf:resource="http://library.example.org/resource/genre-satire"/>
+    <schema:author rdf:resource="http://library.example.org/resource/person-jane-austen"/>
+    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1811</schema:datePublished>
+    <schema:genre rdf:resource="http://library.example.org/resource/genre-romance"/>
     <schema:inLanguage>en</schema:inLanguage>
-    <schema:name xml:lang="en">Animal Farm</schema:name>
-    <schema:publisher rdf:resource="http://library.example.org/resource/publisher-secker-warburg"/>
+    <schema:name xml:lang="en">Sense and Sensibility</schema:name>
+    <schema:publisher rdf:resource="http://library.example.org/resource/publisher-thomas-egerton"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/book-tom-sawyer">
+    <rdf:type rdf:resource="https://schema.org/Book"/>
+    <schema:author rdf:resource="http://library.example.org/resource/person-mark-twain"/>
+    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1876</schema:datePublished>
+    <schema:genre rdf:resource="http://library.example.org/resource/genre-adventure"/>
+    <schema:inLanguage>en</schema:inLanguage>
+    <schema:name xml:lang="en">The Adventures of Tom Sawyer</schema:name>
+    <schema:publisher rdf:resource="http://library.example.org/resource/publisher-american-publishing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/book-les-miserables">
+    <rdf:type rdf:resource="https://schema.org/Book"/>
+    <schema:author rdf:resource="http://library.example.org/resource/person-victor-hugo"/>
+    <schema:datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1862</schema:datePublished>
+    <schema:genre rdf:resource="http://library.example.org/resource/genre-historical-fiction"/>
+    <schema:inLanguage>fr</schema:inLanguage>
+    <schema:name xml:lang="fr">Les Misérables</schema:name>
+    <schema:publisher rdf:resource="http://library.example.org/resource/publisher-lacroix-verboeckhoven"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/publisher-lacroix-verboeckhoven">
+    <rdf:type rdf:resource="https://schema.org/Organization"/>
+    <schema:location rdf:resource="http://library.example.org/resource/country-belgium"/>
+    <schema:name>A. Lacroix, Verboeckhoven et Cie</schema:name>
   </rdf:Description>
   <rdf:Description rdf:about="http://library.example.org/resource/book-the-trial">
     <rdf:type rdf:resource="https://schema.org/Book"/>
@@ -185,42 +168,47 @@
     <schema:name xml:lang="de">Der Process</schema:name>
     <schema:publisher rdf:resource="http://library.example.org/resource/publisher-die-schmiede"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/country-usa">
-    <rdf:type rdf:resource="https://schema.org/Country"/>
-    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q30"/>
-    <schema:name xml:lang="en">United States</schema:name>
-    <schema:name xml:lang="uk">США</schema:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/genre-adventure">
-    <rdf:type rdf:resource="http://library.example.org/ontology#Genre"/>
-    <rdfs:label xml:lang="en">Adventure</rdfs:label>
-    <rdfs:label xml:lang="uk">Пригодницька проза</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/genre-modernism">
-    <rdf:type rdf:resource="http://library.example.org/ontology#Genre"/>
-    <rdfs:label xml:lang="en">Modernism</rdfs:label>
-    <rdfs:label xml:lang="uk">Модернізм</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/genre-satire">
-    <rdf:type rdf:resource="http://library.example.org/ontology#Genre"/>
-    <rdfs:label xml:lang="en">Satire</rdfs:label>
-    <rdfs:label xml:lang="uk">Сатира</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="http://library.example.org/resource/country-czechia">
     <rdf:type rdf:resource="https://schema.org/Country"/>
     <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q213"/>
     <schema:name xml:lang="en">Czech Republic</schema:name>
     <schema:name xml:lang="uk">Чехія</schema:name>
   </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/publisher-lacroix-verboeckhoven">
-    <rdf:type rdf:resource="https://schema.org/Organization"/>
-    <schema:location rdf:resource="http://library.example.org/resource/country-belgium"/>
-    <schema:name>A. Lacroix, Verboeckhoven et Cie</schema:name>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/publisher-kurt-wolff">
+  <rdf:Description rdf:about="http://library.example.org/resource/publisher-die-schmiede">
     <rdf:type rdf:resource="https://schema.org/Organization"/>
     <schema:location rdf:resource="http://library.example.org/resource/country-germany"/>
-    <schema:name>Kurt Wolff Verlag</schema:name>
+    <schema:name>Die Schmiede</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/genre-modernism">
+    <rdf:type rdf:resource="http://library.example.org/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Modernism</rdfs:label>
+    <rdfs:label xml:lang="uk">Модернізм</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/genre-historical-fiction">
+    <rdf:type rdf:resource="http://library.example.org/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Historical fiction</rdfs:label>
+    <rdfs:label xml:lang="uk">Історичний роман</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/genre-adventure">
+    <rdf:type rdf:resource="http://library.example.org/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Adventure</rdfs:label>
+    <rdfs:label xml:lang="uk">Пригодницька проза</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/genre-satire">
+    <rdf:type rdf:resource="http://library.example.org/ontology#Genre"/>
+    <rdfs:label xml:lang="en">Satire</rdfs:label>
+    <rdfs:label xml:lang="uk">Сатира</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/publisher-webster">
+    <rdf:type rdf:resource="https://schema.org/Organization"/>
+    <schema:location rdf:resource="http://library.example.org/resource/country-usa"/>
+    <schema:name>Charles L. Webster and Company</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/country-usa">
+    <rdf:type rdf:resource="https://schema.org/Country"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q30"/>
+    <schema:name xml:lang="en">United States</schema:name>
+    <schema:name xml:lang="uk">США</schema:name>
   </rdf:Description>
   <rdf:Description rdf:about="http://library.example.org/resource/country-belgium">
     <rdf:type rdf:resource="https://schema.org/Country"/>
@@ -228,9 +216,21 @@
     <schema:name xml:lang="en">Belgium</schema:name>
     <schema:name xml:lang="uk">Бельгія</schema:name>
   </rdf:Description>
-  <rdf:Description rdf:about="http://library.example.org/resource/publisher-american-publishing">
+  <rdf:Description rdf:about="http://library.example.org/resource/publisher-kurt-wolff">
     <rdf:type rdf:resource="https://schema.org/Organization"/>
-    <schema:location rdf:resource="http://library.example.org/resource/country-usa"/>
-    <schema:name>American Publishing Company</schema:name>
+    <schema:location rdf:resource="http://library.example.org/resource/country-germany"/>
+    <schema:name>Kurt Wolff Verlag</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/country-uk">
+    <rdf:type rdf:resource="https://schema.org/Country"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q145"/>
+    <schema:name xml:lang="en">United Kingdom</schema:name>
+    <schema:name xml:lang="uk">Велика Британія</schema:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://library.example.org/resource/country-france">
+    <rdf:type rdf:resource="https://schema.org/Country"/>
+    <owl:sameAs rdf:resource="http://www.wikidata.org/entity/Q142"/>
+    <schema:name xml:lang="en">France</schema:name>
+    <schema:name xml:lang="uk">Франція</schema:name>
   </rdf:Description>
 </rdf:RDF>

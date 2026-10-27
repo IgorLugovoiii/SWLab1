@@ -153,7 +153,7 @@ ex:genre-satire a ont:Genre ;
 
 ex:person-franz-kafka a foaf:Person,
         schema:Person ;
-    owl:sameAs wd:Q5879 ;
+    owl:sameAs wd:Q905 ;
     foaf:name "Franz Kafka" ;
     schema:birthDate "1883"^^xsd:gYear ;
     schema:name "Franz Kafka" ;

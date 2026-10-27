@@ -105,7 +105,7 @@ ex:genre-satire rdfs:label "Satire"@en .
 ex:genre-satire rdfs:label "Сатира"@uk .
 ex:person-franz-kafka rdf:type foaf:Person .
 ex:person-franz-kafka rdf:type schema:Person .
-ex:person-franz-kafka owl:sameAs wd:Q5879 .
+ex:person-franz-kafka owl:sameAs wd:Q905 .
 ex:person-franz-kafka foaf:name "Franz Kafka" .
 ex:person-franz-kafka schema:birthDate "1883"^^xsd:gYear .
 ex:person-franz-kafka schema:name "Franz Kafka" .
