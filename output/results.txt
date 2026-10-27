@@ -1,0 +1,128 @@
+
+=== Q1: Які книги написав Джордж Орвелл? (сортування за роком)
+SELECT ?title ?year WHERE {
+  ?book schema:author ex:person-george-orwell ;
+        schema:name ?title ;
+        schema:datePublished ?year .
+}
+ORDER BY ?year
+-- Результат (2 рядків): title | year
+   Animal Farm | 1945
+   Nineteen Eighty-Four | 1949
+
+=== Q2: Скільки книг у графі має кожен автор? (COUNT)
+SELECT ?authorName (COUNT(?book) AS ?n) WHERE {
+  ?book schema:author ?author .
+  ?author schema:name ?authorName .
+}
+GROUP BY ?authorName
+ORDER BY DESC(?n) ?authorName
+-- Результат (5 рядків): authorName | n
+   Franz Kafka | 2
+   George Orwell | 2
+   Jane Austen | 2
+   Mark Twain | 2
+   Victor Hugo | 1
+
+=== Q3: Які книги видані у Німеччині? (ланцюжок: книга -> видавництво -> країна -> назва, 3 зв'язки)
+SELECT ?title ?publisherName WHERE {
+  ?book schema:name ?title ;
+        schema:publisher ?pub .
+  ?pub schema:name ?publisherName ;
+       schema:location ?country .
+  ?country schema:name "Germany"@en .
+}
+ORDER BY ?title
+-- Результат (2 рядків): title | publisherName
+   Der Process | Die Schmiede
+   Die Verwandlung | Kurt Wolff Verlag
+
+=== Q4: Які книги видані після 1900 року? (FILTER + сортування за спаданням)
+SELECT ?title ?year WHERE {
+  ?book schema:name ?title ;
+        schema:datePublished ?year .
+  FILTER(?year > 1900)
+}
+ORDER BY DESC(?year)
+-- Результат (4 рядків): title | year
+   Nineteen Eighty-Four | 1949
+   Animal Farm | 1945
+   Der Process | 1925
+   Die Verwandlung | 1915
+
+=== Q5: Перший, останній і середній рік видання для кожного жанру (MIN, MAX, AVG)
+SELECT ?genreLabel (COUNT(?book) AS ?books) (MIN(?year) AS ?first)
+       (MAX(?year) AS ?last) (AVG(?year) AS ?avgYear) WHERE {
+  ?book schema:genre ?genre ;
+        schema:datePublished ?year .
+  ?genre rdfs:label ?genreLabel .
+  FILTER(LANG(?genreLabel) = "en")
+}
+GROUP BY ?genreLabel
+ORDER BY ?avgYear
+-- Результат (6 рядків): genreLabel | books | first | last | avgYear
+   Romance | 2 | 1811 | 1813 | 1812
+   Historical fiction | 1 | 1862 | 1862 | 1862
+   Adventure | 1 | 1876 | 1876 | 1876
+   Satire | 2 | 1884 | 1945 | 1914.5
+   Modernism | 2 | 1915 | 1925 | 1920
+   Dystopia | 1 | 1949 | 1949 | 1949
+
+=== Q6: Книги, написані авторами з Франції (зв'язок між типами: книга -> автор -> країна)
+SELECT ?title ?authorName WHERE {
+  ?book schema:name ?title ;
+        schema:author ?author .
+  ?author schema:name ?authorName ;
+          schema:nationality ?country .
+  ?country schema:name "France"@en .
+}
+ORDER BY ?authorName ?title
+-- Результат (1 рядків): title | authorName
+   Les Misérables | Victor Hugo
+
+### Помилковий та виправлений приклад
+
+=== Q4-wrong: ПОМИЛКА: FILTER порівнює рік (число) з рядком "1900"
+SELECT ?title ?year WHERE {
+  ?book schema:name ?title ;
+        schema:datePublished ?year .
+  FILTER(?year > "1900")
+}
+ORDER BY DESC(?year)
+-- Результат (0 рядків): title | year
+   (порожньо)
+
+=== Q4-fixed: ВИПРАВЛЕНО: FILTER(?year > 1900) без лапок
+SELECT ?title ?year WHERE {
+  ?book schema:name ?title ;
+        schema:datePublished ?year .
+  FILTER(?year > 1900)
+}
+ORDER BY DESC(?year)
+-- Результат (4 рядків): title | year
+   Nineteen Eighty-Four | 1949
+   Animal Farm | 1945
+   Der Process | 1925
+   Die Verwandlung | 1915
+
+### Федеративний запит до Wikidata
+
+=== Q7-federated: Зв'язок із Wikidata: український підпис і дата народження автора з Wikidata
+SELECT ?authorName ?wd ?wdLabel ?wdBirth WHERE {
+  ?author a schema:Person ;
+          schema:name ?authorName ;
+          owl:sameAs ?wd .
+  FILTER(STRSTARTS(STR(?wd), "http://www.wikidata.org/entity/"))
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?wd rdfs:label ?wdLabel .
+    FILTER(LANG(?wdLabel) = "uk")
+    OPTIONAL { ?wd wdt:P569 ?wdBirth . }
+  }
+}
+ORDER BY ?authorName
+-- Результат (5 рядків): authorName | wd | wdLabel | wdBirth
+   Franz Kafka | http://www.wikidata.org/entity/Q5879 | Йоганн Вольфганг фон Гете | 1749-08-28T00:00:00+00:00
+   George Orwell | http://www.wikidata.org/entity/Q3335 | Джордж Орвелл | 1903-06-25T00:00:00+00:00
+   Jane Austen | http://www.wikidata.org/entity/Q36322 | Джейн Остін | 1775-12-16T00:00:00+00:00
+   Mark Twain | http://www.wikidata.org/entity/Q7245 | Марк Твен | 1835-11-30T00:00:00+00:00
+   Victor Hugo | http://www.wikidata.org/entity/Q535 | Віктор Гюґо | 1802-02-26T00:00:00+00:00

@@ -1,0 +1,161 @@
+ex:book-1984 rdf:type schema:Book .
+ex:book-1984 schema:author ex:person-george-orwell .
+ex:book-1984 schema:datePublished "1949"^^xsd:integer .
+ex:book-1984 schema:genre ex:genre-dystopia .
+ex:book-1984 schema:inLanguage "en" .
+ex:book-1984 schema:name "Nineteen Eighty-Four"@en .
+ex:book-1984 schema:publisher ex:publisher-secker-warburg .
+ex:book-animal-farm rdf:type schema:Book .
+ex:book-animal-farm schema:author ex:person-george-orwell .
+ex:book-animal-farm schema:datePublished "1945"^^xsd:integer .
+ex:book-animal-farm schema:genre ex:genre-satire .
+ex:book-animal-farm schema:inLanguage "en" .
+ex:book-animal-farm schema:name "Animal Farm"@en .
+ex:book-animal-farm schema:publisher ex:publisher-secker-warburg .
+ex:book-huckleberry-finn rdf:type schema:Book .
+ex:book-huckleberry-finn schema:author ex:person-mark-twain .
+ex:book-huckleberry-finn schema:datePublished "1884"^^xsd:integer .
+ex:book-huckleberry-finn schema:genre ex:genre-satire .
+ex:book-huckleberry-finn schema:inLanguage "en" .
+ex:book-huckleberry-finn schema:name "Adventures of Huckleberry Finn"@en .
+ex:book-huckleberry-finn schema:publisher ex:publisher-webster .
+ex:book-les-miserables rdf:type schema:Book .
+ex:book-les-miserables schema:author ex:person-victor-hugo .
+ex:book-les-miserables schema:datePublished "1862"^^xsd:integer .
+ex:book-les-miserables schema:genre ex:genre-historical-fiction .
+ex:book-les-miserables schema:inLanguage "fr" .
+ex:book-les-miserables schema:name "Les Misérables"@fr .
+ex:book-les-miserables schema:publisher ex:publisher-lacroix-verboeckhoven .
+ex:book-pride-and-prejudice rdf:type schema:Book .
+ex:book-pride-and-prejudice schema:author ex:person-jane-austen .
+ex:book-pride-and-prejudice schema:datePublished "1813"^^xsd:integer .
+ex:book-pride-and-prejudice schema:genre ex:genre-romance .
+ex:book-pride-and-prejudice schema:inLanguage "en" .
+ex:book-pride-and-prejudice schema:name "Pride and Prejudice"@en .
+ex:book-pride-and-prejudice schema:publisher ex:publisher-thomas-egerton .
+ex:book-sense-and-sensibility rdf:type schema:Book .
+ex:book-sense-and-sensibility schema:author ex:person-jane-austen .
+ex:book-sense-and-sensibility schema:datePublished "1811"^^xsd:integer .
+ex:book-sense-and-sensibility schema:genre ex:genre-romance .
+ex:book-sense-and-sensibility schema:inLanguage "en" .
+ex:book-sense-and-sensibility schema:name "Sense and Sensibility"@en .
+ex:book-sense-and-sensibility schema:publisher ex:publisher-thomas-egerton .
+ex:book-the-metamorphosis rdf:type schema:Book .
+ex:book-the-metamorphosis schema:author ex:person-franz-kafka .
+ex:book-the-metamorphosis schema:datePublished "1915"^^xsd:integer .
+ex:book-the-metamorphosis schema:genre ex:genre-modernism .
+ex:book-the-metamorphosis schema:inLanguage "de" .
+ex:book-the-metamorphosis schema:name "Die Verwandlung"@de .
+ex:book-the-metamorphosis schema:publisher ex:publisher-kurt-wolff .
+ex:book-the-trial rdf:type schema:Book .
+ex:book-the-trial schema:author ex:person-franz-kafka .
+ex:book-the-trial schema:datePublished "1925"^^xsd:integer .
+ex:book-the-trial schema:genre ex:genre-modernism .
+ex:book-the-trial schema:inLanguage "de" .
+ex:book-the-trial schema:name "Der Process"@de .
+ex:book-the-trial schema:publisher ex:publisher-die-schmiede .
+ex:book-tom-sawyer rdf:type schema:Book .
+ex:book-tom-sawyer schema:author ex:person-mark-twain .
+ex:book-tom-sawyer schema:datePublished "1876"^^xsd:integer .
+ex:book-tom-sawyer schema:genre ex:genre-adventure .
+ex:book-tom-sawyer schema:inLanguage "en" .
+ex:book-tom-sawyer schema:name "The Adventures of Tom Sawyer"@en .
+ex:book-tom-sawyer schema:publisher ex:publisher-american-publishing .
+ex:country-belgium rdf:type schema:Country .
+ex:country-belgium owl:sameAs wd:Q31 .
+ex:country-belgium schema:name "Belgium"@en .
+ex:country-belgium schema:name "Бельгія"@uk .
+ex:country-czechia rdf:type schema:Country .
+ex:country-czechia owl:sameAs wd:Q213 .
+ex:country-czechia schema:name "Czech Republic"@en .
+ex:country-czechia schema:name "Чехія"@uk .
+ex:country-france rdf:type schema:Country .
+ex:country-france owl:sameAs wd:Q142 .
+ex:country-france schema:name "France"@en .
+ex:country-france schema:name "Франція"@uk .
+ex:country-germany rdf:type schema:Country .
+ex:country-germany owl:sameAs wd:Q183 .
+ex:country-germany schema:name "Germany"@en .
+ex:country-germany schema:name "Німеччина"@uk .
+ex:country-uk rdf:type schema:Country .
+ex:country-uk owl:sameAs wd:Q145 .
+ex:country-uk schema:name "United Kingdom"@en .
+ex:country-uk schema:name "Велика Британія"@uk .
+ex:country-usa rdf:type schema:Country .
+ex:country-usa owl:sameAs wd:Q30 .
+ex:country-usa schema:name "United States"@en .
+ex:country-usa schema:name "США"@uk .
+ex:genre-adventure rdf:type ont:Genre .
+ex:genre-adventure rdfs:label "Adventure"@en .
+ex:genre-adventure rdfs:label "Пригодницька проза"@uk .
+ex:genre-dystopia rdf:type ont:Genre .
+ex:genre-dystopia rdfs:label "Dystopia"@en .
+ex:genre-dystopia rdfs:label "Антиутопія"@uk .
+ex:genre-historical-fiction rdf:type ont:Genre .
+ex:genre-historical-fiction rdfs:label "Historical fiction"@en .
+ex:genre-historical-fiction rdfs:label "Історичний роман"@uk .
+ex:genre-modernism rdf:type ont:Genre .
+ex:genre-modernism rdfs:label "Modernism"@en .
+ex:genre-modernism rdfs:label "Модернізм"@uk .
+ex:genre-romance rdf:type ont:Genre .
+ex:genre-romance rdfs:label "Romance"@en .
+ex:genre-romance rdfs:label "Любовний роман"@uk .
+ex:genre-satire rdf:type ont:Genre .
+ex:genre-satire rdfs:label "Satire"@en .
+ex:genre-satire rdfs:label "Сатира"@uk .
+ex:person-franz-kafka rdf:type foaf:Person .
+ex:person-franz-kafka rdf:type schema:Person .
+ex:person-franz-kafka owl:sameAs wd:Q5879 .
+ex:person-franz-kafka foaf:name "Franz Kafka" .
+ex:person-franz-kafka schema:birthDate "1883"^^xsd:gYear .
+ex:person-franz-kafka schema:name "Franz Kafka" .
+ex:person-franz-kafka schema:nationality ex:country-czechia .
+ex:person-george-orwell rdf:type foaf:Person .
+ex:person-george-orwell rdf:type schema:Person .
+ex:person-george-orwell owl:sameAs wd:Q3335 .
+ex:person-george-orwell foaf:name "George Orwell" .
+ex:person-george-orwell schema:birthDate "1903"^^xsd:gYear .
+ex:person-george-orwell schema:name "George Orwell" .
+ex:person-george-orwell schema:nationality ex:country-uk .
+ex:person-jane-austen rdf:type foaf:Person .
+ex:person-jane-austen rdf:type schema:Person .
+ex:person-jane-austen owl:sameAs wd:Q36322 .
+ex:person-jane-austen foaf:name "Jane Austen" .
+ex:person-jane-austen schema:birthDate "1775"^^xsd:gYear .
+ex:person-jane-austen schema:name "Jane Austen" .
+ex:person-jane-austen schema:nationality ex:country-uk .
+ex:person-mark-twain rdf:type foaf:Person .
+ex:person-mark-twain rdf:type schema:Person .
+ex:person-mark-twain owl:sameAs wd:Q7245 .
+ex:person-mark-twain foaf:name "Mark Twain" .
+ex:person-mark-twain schema:birthDate "1835"^^xsd:gYear .
+ex:person-mark-twain schema:name "Mark Twain" .
+ex:person-mark-twain schema:nationality ex:country-usa .
+ex:person-victor-hugo rdf:type foaf:Person .
+ex:person-victor-hugo rdf:type schema:Person .
+ex:person-victor-hugo owl:sameAs wd:Q535 .
+ex:person-victor-hugo foaf:name "Victor Hugo" .
+ex:person-victor-hugo schema:birthDate "1802"^^xsd:gYear .
+ex:person-victor-hugo schema:name "Victor Hugo" .
+ex:person-victor-hugo schema:nationality ex:country-france .
+ex:publisher-american-publishing rdf:type schema:Organization .
+ex:publisher-american-publishing schema:location ex:country-usa .
+ex:publisher-american-publishing schema:name "American Publishing Company" .
+ex:publisher-die-schmiede rdf:type schema:Organization .
+ex:publisher-die-schmiede schema:location ex:country-germany .
+ex:publisher-die-schmiede schema:name "Die Schmiede" .
+ex:publisher-kurt-wolff rdf:type schema:Organization .
+ex:publisher-kurt-wolff schema:location ex:country-germany .
+ex:publisher-kurt-wolff schema:name "Kurt Wolff Verlag" .
+ex:publisher-lacroix-verboeckhoven rdf:type schema:Organization .
+ex:publisher-lacroix-verboeckhoven schema:location ex:country-belgium .
+ex:publisher-lacroix-verboeckhoven schema:name "A. Lacroix, Verboeckhoven et Cie" .
+ex:publisher-secker-warburg rdf:type schema:Organization .
+ex:publisher-secker-warburg schema:location ex:country-uk .
+ex:publisher-secker-warburg schema:name "Secker & Warburg" .
+ex:publisher-thomas-egerton rdf:type schema:Organization .
+ex:publisher-thomas-egerton schema:location ex:country-uk .
+ex:publisher-thomas-egerton schema:name "Thomas Egerton" .
+ex:publisher-webster rdf:type schema:Organization .
+ex:publisher-webster schema:location ex:country-usa .
+ex:publisher-webster schema:name "Charles L. Webster and Company" .

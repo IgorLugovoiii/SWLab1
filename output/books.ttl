@@ -1,0 +1,203 @@
+@prefix ex: <http://library.example.org/resource/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ont: <http://library.example.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:book-1984 a schema:Book ;
+    schema:author ex:person-george-orwell ;
+    schema:datePublished 1949 ;
+    schema:genre ex:genre-dystopia ;
+    schema:inLanguage "en" ;
+    schema:name "Nineteen Eighty-Four"@en ;
+    schema:publisher ex:publisher-secker-warburg .
+
+ex:book-animal-farm a schema:Book ;
+    schema:author ex:person-george-orwell ;
+    schema:datePublished 1945 ;
+    schema:genre ex:genre-satire ;
+    schema:inLanguage "en" ;
+    schema:name "Animal Farm"@en ;
+    schema:publisher ex:publisher-secker-warburg .
+
+ex:book-huckleberry-finn a schema:Book ;
+    schema:author ex:person-mark-twain ;
+    schema:datePublished 1884 ;
+    schema:genre ex:genre-satire ;
+    schema:inLanguage "en" ;
+    schema:name "Adventures of Huckleberry Finn"@en ;
+    schema:publisher ex:publisher-webster .
+
+ex:book-les-miserables a schema:Book ;
+    schema:author ex:person-victor-hugo ;
+    schema:datePublished 1862 ;
+    schema:genre ex:genre-historical-fiction ;
+    schema:inLanguage "fr" ;
+    schema:name "Les Misérables"@fr ;
+    schema:publisher ex:publisher-lacroix-verboeckhoven .
+
+ex:book-pride-and-prejudice a schema:Book ;
+    schema:author ex:person-jane-austen ;
+    schema:datePublished 1813 ;
+    schema:genre ex:genre-romance ;
+    schema:inLanguage "en" ;
+    schema:name "Pride and Prejudice"@en ;
+    schema:publisher ex:publisher-thomas-egerton .
+
+ex:book-sense-and-sensibility a schema:Book ;
+    schema:author ex:person-jane-austen ;
+    schema:datePublished 1811 ;
+    schema:genre ex:genre-romance ;
+    schema:inLanguage "en" ;
+    schema:name "Sense and Sensibility"@en ;
+    schema:publisher ex:publisher-thomas-egerton .
+
+ex:book-the-metamorphosis a schema:Book ;
+    schema:author ex:person-franz-kafka ;
+    schema:datePublished 1915 ;
+    schema:genre ex:genre-modernism ;
+    schema:inLanguage "de" ;
+    schema:name "Die Verwandlung"@de ;
+    schema:publisher ex:publisher-kurt-wolff .
+
+ex:book-the-trial a schema:Book ;
+    schema:author ex:person-franz-kafka ;
+    schema:datePublished 1925 ;
+    schema:genre ex:genre-modernism ;
+    schema:inLanguage "de" ;
+    schema:name "Der Process"@de ;
+    schema:publisher ex:publisher-die-schmiede .
+
+ex:book-tom-sawyer a schema:Book ;
+    schema:author ex:person-mark-twain ;
+    schema:datePublished 1876 ;
+    schema:genre ex:genre-adventure ;
+    schema:inLanguage "en" ;
+    schema:name "The Adventures of Tom Sawyer"@en ;
+    schema:publisher ex:publisher-american-publishing .
+
+ex:country-belgium a schema:Country ;
+    owl:sameAs wd:Q31 ;
+    schema:name "Belgium"@en,
+        "Бельгія"@uk .
+
+ex:country-czechia a schema:Country ;
+    owl:sameAs wd:Q213 ;
+    schema:name "Czech Republic"@en,
+        "Чехія"@uk .
+
+ex:country-france a schema:Country ;
+    owl:sameAs wd:Q142 ;
+    schema:name "France"@en,
+        "Франція"@uk .
+
+ex:genre-adventure a ont:Genre ;
+    rdfs:label "Adventure"@en,
+        "Пригодницька проза"@uk .
+
+ex:genre-dystopia a ont:Genre ;
+    rdfs:label "Dystopia"@en,
+        "Антиутопія"@uk .
+
+ex:genre-historical-fiction a ont:Genre ;
+    rdfs:label "Historical fiction"@en,
+        "Історичний роман"@uk .
+
+ex:person-victor-hugo a foaf:Person,
+        schema:Person ;
+    owl:sameAs wd:Q535 ;
+    foaf:name "Victor Hugo" ;
+    schema:birthDate "1802"^^xsd:gYear ;
+    schema:name "Victor Hugo" ;
+    schema:nationality ex:country-france .
+
+ex:publisher-american-publishing a schema:Organization ;
+    schema:location ex:country-usa ;
+    schema:name "American Publishing Company" .
+
+ex:publisher-die-schmiede a schema:Organization ;
+    schema:location ex:country-germany ;
+    schema:name "Die Schmiede" .
+
+ex:publisher-kurt-wolff a schema:Organization ;
+    schema:location ex:country-germany ;
+    schema:name "Kurt Wolff Verlag" .
+
+ex:publisher-lacroix-verboeckhoven a schema:Organization ;
+    schema:location ex:country-belgium ;
+    schema:name "A. Lacroix, Verboeckhoven et Cie" .
+
+ex:publisher-webster a schema:Organization ;
+    schema:location ex:country-usa ;
+    schema:name "Charles L. Webster and Company" .
+
+ex:country-germany a schema:Country ;
+    owl:sameAs wd:Q183 ;
+    schema:name "Germany"@en,
+        "Німеччина"@uk .
+
+ex:genre-modernism a ont:Genre ;
+    rdfs:label "Modernism"@en,
+        "Модернізм"@uk .
+
+ex:genre-romance a ont:Genre ;
+    rdfs:label "Romance"@en,
+        "Любовний роман"@uk .
+
+ex:genre-satire a ont:Genre ;
+    rdfs:label "Satire"@en,
+        "Сатира"@uk .
+
+ex:person-franz-kafka a foaf:Person,
+        schema:Person ;
+    owl:sameAs wd:Q5879 ;
+    foaf:name "Franz Kafka" ;
+    schema:birthDate "1883"^^xsd:gYear ;
+    schema:name "Franz Kafka" ;
+    schema:nationality ex:country-czechia .
+
+ex:person-george-orwell a foaf:Person,
+        schema:Person ;
+    owl:sameAs wd:Q3335 ;
+    foaf:name "George Orwell" ;
+    schema:birthDate "1903"^^xsd:gYear ;
+    schema:name "George Orwell" ;
+    schema:nationality ex:country-uk .
+
+ex:person-jane-austen a foaf:Person,
+        schema:Person ;
+    owl:sameAs wd:Q36322 ;
+    foaf:name "Jane Austen" ;
+    schema:birthDate "1775"^^xsd:gYear ;
+    schema:name "Jane Austen" ;
+    schema:nationality ex:country-uk .
+
+ex:person-mark-twain a foaf:Person,
+        schema:Person ;
+    owl:sameAs wd:Q7245 ;
+    foaf:name "Mark Twain" ;
+    schema:birthDate "1835"^^xsd:gYear ;
+    schema:name "Mark Twain" ;
+    schema:nationality ex:country-usa .
+
+ex:publisher-secker-warburg a schema:Organization ;
+    schema:location ex:country-uk ;
+    schema:name "Secker & Warburg" .
+
+ex:publisher-thomas-egerton a schema:Organization ;
+    schema:location ex:country-uk ;
+    schema:name "Thomas Egerton" .
+
+ex:country-usa a schema:Country ;
+    owl:sameAs wd:Q30 ;
+    schema:name "United States"@en,
+        "США"@uk .
+
+ex:country-uk a schema:Country ;
+    owl:sameAs wd:Q145 ;
+    schema:name "United Kingdom"@en,
+        "Велика Британія"@uk .
+
